@@ -6,7 +6,10 @@
 
 <body>
     <?php echo "Hola Mundo!"; echo "<h2>Adios Mundo</h2>" ?>
-    <?php echo "<h3> Prueba1</h3>" ?>
+    <?php echo <<<END
+            En un mundo conectado, donde cada segundo se envían
+            millones de correos electrónicos....
+            END; ?>
 </body>
 
 </html>
