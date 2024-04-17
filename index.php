@@ -10,13 +10,6 @@
             En un mundo conectado, donde cada segundo se envían
             millones de correos electrónicos.... Nacional sigue siendo el más grande de Uruguay
             END; ?>
-            // comentario de una linea, previo a las variables del ejercicio
-
-            
-            /* comentario de varias
-             lineas, despues de 
-             haber declarado unas variables */ 
-
 </body>
 
 </html>
