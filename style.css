@@ -1,0 +1,30 @@
+*{
+    padding:0;
+    margin:0;
+}
+main{
+    color: blue;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    margin-block: 2%;
+    padding: 2%;
+    border-radius: 14px;
+    width: 600px;
+    background-color: rgba(0, 0, 0, 0.300);
+    backdrop-filter: blur(20px);
+}
+.flex-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+body{
+    display: flex;
+    justify-content: center;
+}
