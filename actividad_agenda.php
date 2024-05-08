@@ -26,15 +26,14 @@
         <ul>
             <?php
             foreach($agenda as $eventosDelDia){
-                echo "<li>$eventosDelDia</li>";
+                echo "<li style='color:red'>$eventosDelDia</li>";
             }?>
-        </ul>   
+        </ul>
+        <!-- Otra forma de hacer lo mismo -->
+        <ul>
+            <?php foreach($agenda as $eventosDelDia):?>
+                <li style="color:blue"><?php echo $eventosDelDia;?></li>
+            <?php endforeach;?>
+        </ul>  
 </body>
 </html>
-
-<!--
-<ul>
-    <?php foreach($agenda as $eventosDelDia):?>
-        <li><?php echo $color;?></li>
-    <?php endforeach;?>
-</ul>  -->
