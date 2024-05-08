@@ -11,6 +11,7 @@
 
     $agenda[] = 'Dentista a las 12h';
     $agenda[] = 'Juega Nacional a las 21h';
+    $agenda[] = 'Reunión con amigos a las 23h';
 
     var_dump($agenda); 
     ?>
@@ -23,8 +24,17 @@
     var_dump($agenda);
     ?> 
         <ul>
-            <li><?php var_dump($agenda[0]); ?>
-            <li><?php var_dump($agenda[1]); ?>
+            <?php
+            foreach($agenda as $eventosDelDia){
+                echo "<li>$eventosDelDia</li>";
+            }?>
         </ul>   
 </body>
 </html>
+
+<!--
+<ul>
+    <?php foreach($agenda as $eventosDelDia):?>
+        <li><?php echo $color;?></li>
+    <?php endforeach;?>
+</ul>  -->
