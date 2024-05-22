@@ -23,13 +23,15 @@
 
     var_dump($agenda);
     ?> 
+        <!--  
         <ul>
             <?php
             foreach($agenda as $eventosDelDia){
                 echo "<li style='color:red'>$eventosDelDia</li>";
-            }?>
+            }?> 
+        -->
         </ul>
-        <!-- Otra forma de hacer lo mismo -->
+<!-- Otra forma de hacer lo mismo, pero más fácil, esta es la ideal -->
         <ul>
             <?php foreach($agenda as $eventosDelDia):?>
                 <li style="color:blue"><?php echo $eventosDelDia;?></li>
