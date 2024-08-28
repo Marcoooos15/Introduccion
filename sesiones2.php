@@ -8,8 +8,19 @@
 <body>
     <?php
     session_start();
-    echo 'Bienvenido ' . $_SESSION['user']['correo'];
+    if ($_SERVER["REQUEST_METHOD"] == "POST" ){
+        $nombre = $_POST['nombre'];
+        $email = $_POST['email'];
+        $contrasena = $_POST['contrasena'];
 
-    ?>    
+        $user = [
+            "nombre" => $nombre,
+            "correo" => $email,
+            "contrasena" => $contrasena
+        ];
+    $_SESSION["user"] = $user;
+    echo 'Bienvenido ' . $_SESSION['user']['nombre'];
+    }
+    ?>
 </body>
 </html>
