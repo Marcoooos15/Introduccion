@@ -8,12 +8,12 @@
     $usuarioConectado = [
         "nombre" => $nombre,
         "correo" => $email,
-        "fnac" => $fnac
+        "fnac" => $fnac,
         "edad" => $edad
     ];
 
     session_start();
     $_SESSION["user"] = $usuarioConectado;
-    var_dump($usuarioConectado);
+    var_dump(value: $usuarioConectado);
     }
 ?>
